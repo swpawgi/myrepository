@@ -26,7 +26,16 @@ public class HelloWorld {
 			System.out.println("Error while reading name");
 			System.exit(1);
 		}
-		System.out.println("Welcome to Git " + name);
+		// We will add basic testing to check if the name read and printed are the same
+		String message = "Hello to the world of Git " + name;
+		if (message.endsWith(name))
+		{
+			System.out.println("Message has the name at the right place - Test Passed");
+		}
+		else
+		{
+			System.out.println("Message does not have the name at the right place - Test failed");
+		}
 		
 
 	}
